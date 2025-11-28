@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Kanji Quiz Offline",
+    "slug": "kanji-quiz-offline",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "icon": "./icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
