@@ -1,53 +1,108 @@
-// kanjiData.js
-// Dati di esempio: puoi estendere questo file con tutti i kanji N5 seguendo lo stesso formato.
+export const KANJI_N5 = [
+  { kanji: "日", readings: ["ひ", "にち", "じつ"], meaning: "giorno, sole", distractors: ["つき","みず","やま"] },
+  { kanji: "一", readings: ["いち", "ひと"], meaning: "uno", distractors: ["に","さん","よん"] },
+  { kanji: "二", readings: ["に", "ふた"], meaning: "due", distractors: ["いち","さん","よん"] },
+  { kanji: "三", readings: ["さん", "み"], meaning: "tre", distractors: ["いち","に","よん"] },
+  { kanji: "四", readings: ["よん", "し"], meaning: "quattro", distractors: ["いち","に","さん"] },
+  { kanji: "五", readings: ["ご", "いつ"], meaning: "cinque", distractors: ["しち","はち","きゅう"] },
+  { kanji: "六", readings: ["ろく", "む"], meaning: "sei", distractors: ["しち","はち","きゅう"] },
+  { kanji: "七", readings: ["しち", "なな"], meaning: "sette", distractors: ["ご","はち","きゅう"] },
+  { kanji: "八", readings: ["はち", "や"], meaning: "otto", distractors: ["しち","きゅう","じゅう"] },
+  { kanji: "九", readings: ["きゅう", "く"], meaning: "nove", distractors: ["しち","はち","じゅう"] },
+  { kanji: "十", readings: ["じゅう", "とお"], meaning: "dieci", distractors: ["きゅう","はち","しち"] },
+  { kanji: "百", readings: ["ひゃく"], meaning: "cento", distractors: ["せん","まん","じゅう"] },
+  { kanji: "千", readings: ["せん"], meaning: "mille", distractors: ["ひゃく","まん","じゅう"] },
+  { kanji: "万", readings: ["まん"], meaning: "diecimila", distractors: ["せん","ひゃく","じゅう"] },
+  { kanji: "円", readings: ["えん"], meaning: "yen, cerchio", distractors: ["まん","せん","ひゃく"] },
 
-export const KANJI_GROUPS = [
-  {
-    id: 'n5_numbers',
-    label: 'Numeri (一〜十)',
-    items: [
-      { kanji: '一', reading: 'いち' },
-      { kanji: '二', reading: 'に' },
-      { kanji: '三', reading: 'さん' },
-      { kanji: '四', reading: 'よん' },
-      { kanji: '五', reading: 'ご' },
-      { kanji: '六', reading: 'ろく' },
-      { kanji: '七', reading: 'なな' },
-      { kanji: '八', reading: 'はち' },
-      { kanji: '九', reading: 'きゅう' },
-      { kanji: '十', reading: 'じゅう' }
-    ]
-  },
-  {
-    id: 'n5_days',
-    label: 'Giorni / Tempo base',
-    items: [
-      { kanji: '日', reading: 'にち' },
-      { kanji: '月', reading: 'つき' },
-      { kanji: '年', reading: 'とし' },
-      { kanji: '時', reading: 'じ' }
-    ]
-  },
-  {
-    id: 'n5_people',
-    label: 'Persone / Pronomi',
-    items: [
-      { kanji: '人', reading: 'ひと' },
-      { kanji: '口', reading: 'くち' },
-      { kanji: '名', reading: 'な' }
-    ]
-  },
-  {
-    id: 'n5_school',
-    label: 'Scuola / Studio',
-    items: [
-      { kanji: '学', reading: 'がく' },
-      { kanji: '先', reading: 'せん' },
-      { kanji: '生', reading: 'せい' },
-      { kanji: '校', reading: 'こう' }
-    ]
-  }
+  { kanji: "人", readings: ["ひと", "じん", "にん"], meaning: "persona", distractors: ["こ","おとこ","め"] },
+  { kanji: "子", readings: ["こ", "し"], meaning: "bambino", distractors: ["ひと","め","おとこ"] },
+  { kanji: "女", readings: ["おんな", "じょ"], meaning: "donna", distractors: ["おとこ","ひと","こ"] },
+  { kanji: "男", readings: ["おとこ", "だん"], meaning: "uomo", distractors: ["おんな","ひと","こ"] },
+  { kanji: "目", readings: ["め", "もく"], meaning: "occhio", distractors: ["みみ","くち","て"] },
+  { kanji: "耳", readings: ["みみ", "じ"], meaning: "orecchio", distractors: ["め","くち","て"] },
+  { kanji: "口", readings: ["くち", "こう"], meaning: "bocca", distractors: ["め","て","あし"] },
+  { kanji: "手", readings: ["て", "しゅ"], meaning: "mano", distractors: ["あし","め","くち"] },
+  { kanji: "足", readings: ["あし", "そく"], meaning: "piede, gamba", distractors: ["て","め","みみ"] },
+  { kanji: "力", readings: ["ちから", "りょく"], meaning: "forza", distractors: ["て","あし","こころ"] },
+
+  { kanji: "日", readings: ["ひ","にち"], meaning: "giorno, sole", distractors: ["つき","みず","き"] },
+  { kanji: "月", readings: ["つき","げつ","がつ"], meaning: "luna, mese", distractors: ["ひ","かわ","やま"] },
+  { kanji: "火", readings: ["ひ","か"], meaning: "fuoco", distractors: ["みず","つち","かぜ"] },
+  { kanji: "水", readings: ["みず","すい"], meaning: "acqua", distractors: ["ひ","つち","き"] },
+  { kanji: "木", readings: ["き","もく"], meaning: "albero", distractors: ["ひ","つち","みず"] },
+  { kanji: "金", readings: ["かね","きん"], meaning: "oro, metallo", distractors: ["つち","き","ひ"] },
+  { kanji: "土", readings: ["つち","ど"], meaning: "terra", distractors: ["みず","ひ","き"] },
+  { kanji: "山", readings: ["やま","さん"], meaning: "montagna", distractors: ["かわ","き","そら"] },
+  { kanji: "川", readings: ["かわ","がわ"], meaning: "fiume", distractors: ["やま","つき","ひ"] },
+  { kanji: "田", readings: ["た","でん"], meaning: "campo di riso", distractors: ["かわ","つち","やま"] },
+
+  { kanji: "上", readings: ["うえ","あがる","じょう"], meaning: "sopra", distractors: ["した","まえ","うしろ"] },
+  { kanji: "下", readings: ["した","さがる","か"], meaning: "sotto", distractors: ["うえ","まえ","みぎ"] },
+  { kanji: "中", readings: ["なか","ちゅう"], meaning: "dentro, mezzo", distractors: ["うえ","した","あと"] },
+  { kanji: "左", readings: ["ひだり","さ"], meaning: "sinistra", distractors: ["みぎ","まえ","うえ"] },
+  { kanji: "右", readings: ["みぎ","う"], meaning: "destra", distractors: ["ひだり","した","まえ"] },
+  { kanji: "大", readings: ["おお","だい"], meaning: "grande", distractors: ["ちいさい","ながい","はやい"] },
+  { kanji: "小", readings: ["ちいさい","しょう"], meaning: "piccolo", distractors: ["おおきい","ながい","あつい"] },
+  { kanji: "長", readings: ["ながい","ちょう"], meaning: "lungo", distractors: ["みじかい","ひくい","はやい"] },
+  { kanji: "早", readings: ["はやい","そう"], meaning: "presto, veloce", distractors: ["おそい","ながい","ゆっくり"] },
+  { kanji: "安", readings: ["やすい","あん"], meaning: "economico, sicuro", distractors: ["たかい","おおきい","はやい"] },
+  { kanji: "高", readings: ["たかい","こう"], meaning: "alto, caro", distractors: ["やすい","ひくい","ちいさい"] },
+  { kanji: "新", readings: ["あたらしい","しん"], meaning: "nuovo", distractors: ["ふるい","やすい","ひくい"] },
+  { kanji: "古", readings: ["ふるい","こ"], meaning: "vecchio", distractors: ["あたらしい","やすい","ひくい"] },
+
+  { kanji: "学", readings: ["まなぶ","がく"], meaning: "studiare", distractors: ["うる","つくる","はたらく"] },
+  { kanji: "校", readings: ["こう"], meaning: "scuola", distractors: ["がく","にち","じん"] },
+  { kanji: "生", readings: ["いきる","うまれる","せい"], meaning: "vivere, nascere", distractors: ["しぬ","とまる","おちる"] },
+  { kanji: "先", readings: ["さき","せん"], meaning: "prima", distractors: ["あと","まえ","いま"] },
+  { kanji: "名", readings: ["な","めい"], meaning: "nome", distractors: ["ひと","こ","おとこ"] },
+
+  { kanji: "年", readings: ["とし","ねん"], meaning: "anno", distractors: ["つき","ひ","みっか"] },
+  { kanji: "時", readings: ["とき","じ"], meaning: "ora, tempo", distractors: ["ひ","つき","とし"] },
+  { kanji: "週", readings: ["しゅう"], meaning: "settimana", distractors: ["つき","とし","ひ"] },
+  { kanji: "毎", readings: ["まい"], meaning: "ogni", distractors: ["こん","らい","きょ"] },
+
+  { kanji: "先", readings: ["さき","せん"], meaning: "prima", distractors: ["あと","いま","のち"] },
+  { kanji: "午", readings: ["ご"], meaning: "mezzogiorno", distractors: ["ごご","じ","ひる"] },
+  { kanji: "後", readings: ["あと","うしろ","ご"], meaning: "dopo", distractors: ["まえ","さき","なか"] },
+  { kanji: "前", readings: ["まえ","ぜん"], meaning: "davanti, prima", distractors: ["あと","みぎ","うえ"] },
+
+  { kanji: "気", readings: ["き"], meaning: "spirito, aria", distractors: ["みず","ひ","そら"] },
+  { kanji: "天", readings: ["てん"], meaning: "cielo", distractors: ["そら","ひ","ほし"] },
+
+  { kanji: "車", readings: ["くるま","しゃ"], meaning: "auto", distractors: ["でんしゃ","まち","うみ"] },
+  { kanji: "電", readings: ["でん"], meaning: "elettricità", distractors: ["ひかり","そら","あめ"] },
+  { kanji: "駅", readings: ["えき"], meaning: "stazione", distractors: ["みち","くるま","まち"] },
+
+  { kanji: "語", readings: ["ご"], meaning: "lingua", distractors: ["ひと","まち","かたる"] },
+  { kanji: "話", readings: ["はなす","わ"], meaning: "parlare", distractors: ["よむ","かく","きく"] },
+  { kanji: "読", readings: ["よむ","どく"], meaning: "leggere", distractors: ["かく","きく","みる"] },
+  { kanji: "書", readings: ["かく","しょ"], meaning: "scrivere", distractors: ["よむ","みる","はなす"] },
+  { kanji: "聞", readings: ["きく","ぶん"], meaning: "ascoltare", distractors: ["よむ","かく","みる"] },
+  { kanji: "見", readings: ["みる","けん"], meaning: "vedere", distractors: ["きく","よむ","はなす"] },
+
+  { kanji: "食", readings: ["たべる","しょく"], meaning: "mangiare", distractors: ["のむ","つくる","はしる"] },
+  { kanji: "飲", readings: ["のむ"], meaning: "bere", distractors: ["たべる","すう","あびる"] },
+
+  { kanji: "行", readings: ["いく","こう"], meaning: "andare", distractors: ["くる","はしる","とぶ"] },
+  { kanji: "来", readings: ["くる","らい"], meaning: "venire", distractors: ["いく","かえる","でる"] },
+  { kanji: "帰", readings: ["かえる","き"], meaning: "tornare", distractors: ["いく","くる","でる"] },
+
+  { kanji: "入", readings: ["はいる","いれる","にゅう"], meaning: "entrare", distractors: ["でる","あげる","とる"] },
+  { kanji: "出", readings: ["でる","だす","しゅつ"], meaning: "uscire", distractors: ["はいる","とる","おす"] },
+
+  { kanji: "買", readings: ["かう"], meaning: "comprare", distractors: ["うる","つくる","とる"] },
+  { kanji: "売", readings: ["うる"], meaning: "vendere", distractors: ["かう","つくる","あげる"] },
+
+  { kanji: "雨", readings: ["あめ","う"], meaning: "pioggia", distractors: ["ゆき","そら","かぜ"] },
+  { kanji: "雪", readings: ["ゆき","せつ"], meaning: "neve", distractors: ["あめ","かぜ","そら"] },
+  { kanji: "風", readings: ["かぜ","ふう"], meaning: "vento", distractors: ["ゆき","あめ","そら"] },
+
+  { kanji: "空", readings: ["そら","くう"], meaning: "cielo", distractors: ["やま","かわ","あめ"] },
+  { kanji: "花", readings: ["はな","か"], meaning: "fiore", distractors: ["き","やま","かわ"] },
+  { kanji: "草", readings: ["くさ","そう"], meaning: "erba", distractors: ["き","はな","つち"] },
+
+  { kanji: "犬", readings: ["いぬ","けん"], meaning: "cane", distractors: ["ねこ","とり","うし"] },
+  { kanji: "猫", readings: ["ねこ"], meaning: "gatto", distractors: ["いぬ","とり","うま"] },
+  { kanji: "魚", readings: ["さかな","ぎょ"], meaning: "pesce", distractors: ["とり","いぬ","ねこ"] }
 ];
-
-// Nota: più avanti puoi creare altri gruppi (ad es. tutti i N5) aggiungendo oggetti
-// con { id, label, items: [{ kanji, reading }, ...] } in questo array.
